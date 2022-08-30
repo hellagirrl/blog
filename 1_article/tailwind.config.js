@@ -9,6 +9,6 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require("@tailwindcss/typography")],
   purge: ['./src/**/*.js', './src/**/*.njk', './src/**/*.svg']
 }

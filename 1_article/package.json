@@ -1,10 +1,16 @@
 {
-  "name": "1_article",
+  "name": "articles",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
+    "build:eleventy": "eleventy",
+    "build:webpack": "webpack",
+    "clean": "rm -rf dist",
+    "start": "npm-run-all clean -p build:* -p start:*",
+    "start:eleventy": "eleventy --serve",
+    "start:webpack": "webpack --watch"
   },
   "keywords": [],
   "author": "",
