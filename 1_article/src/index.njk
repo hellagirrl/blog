@@ -1,8 +1,33 @@
 ---
 title: Home
 layout: layout.njk
+pagination: 
+  data: collections.post
+  size: 6
+  reverse: true
+  alias: posts
 ---
 
-<section>
-  <h1>Hello to our blog</h1>
+<section class=" text-gray-700 body-font">
+  <h1 class="text-5xl text-center">Welcome to our blog</h1>
+  <div class="container px-8 pt-24 mx-auto lg:px-4">
+    <div class="flex flex-wrap text-left">
+      {% for post in posts %}
+        <div class="px-8 py-6 lg:w-1/3 md:w-full">
+          <div class="p-6 rounded-md bg-blueGray-299">
+            <img class="object-cover object-center w-full h-40 mb-6 rounded" src="{{ post.url }}" alt="blogpost image">
+            <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">{{ post.data.title }}</h2>
+            <p class="mb-4 text-base leading-relaxed">{{ post.data.page.excerpt }}</p>
+            <a class="inline flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400" href="{{ post.url | url}}">Read More</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
+
+{#
+  TODO: 
+  - Sitemap (https://11ty.recipes/recipes/add-a-sitemap/)
+  - Add a11y
+#}
