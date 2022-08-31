@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 
     <script src="/assets/main.bundle.js" defer></script>
+
     <title>{{ title }}</title>
   </head>
   <body class="flex flex-col min-h-screen">
@@ -15,7 +16,9 @@
     <main class="container flex-grow py-8">
       {{ content | safe}}
     </main>
+    {# <div class="container"> #}
     {% include "footer.njk" %}
+    {# </div> #}
   </body>
 </html>
 
