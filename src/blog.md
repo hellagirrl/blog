@@ -1,7 +1,7 @@
 ---
-title: Blog Page
 eleventyNavigation:
   key: Blog Page
+  title: Блог
   order: 2
 ---
 

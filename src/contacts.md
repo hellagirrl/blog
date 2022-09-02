@@ -1,7 +1,7 @@
 ---
-title: Contacts Page
 eleventyNavigation:
   key: Contacts Page
+  title: Контакты
   order: 3
 ---
 
