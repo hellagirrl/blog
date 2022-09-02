@@ -1,6 +1,6 @@
 ---
 title: My First Post
-custom_date: 30th August of 2022
+date: 2022-09-02
 layout: layouts/post.njk
 tags: post
 ---

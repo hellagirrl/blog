@@ -6,6 +6,6 @@ layout: layouts/layout.njk
   <h1 class="py-8">
     {{ title }}
   </h1>
-  <p>{{ custom_date }}</p>
+  <time datetime="{{ date }}">{{ date | formatDate }}</time>
   {{ content | safe }}
 </article>
