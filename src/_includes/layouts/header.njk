@@ -1,0 +1,10 @@
+<header class="text-gray-700 bg-white border-t border-b body-font">
+  <div class="container flex flex-col flew-wrap mx-auto md:item-center md:flex-row">
+    <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto md:ml-auto md:mr-auto">
+      {% set navPages = collections.all | eleventyNavigation %}
+      {%- for entry in navPages %}
+        <a href="{{ entry.url }}" class="mr-6 text-md font-semibold hover:text-gray-900">{{ entry.title }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+</header>

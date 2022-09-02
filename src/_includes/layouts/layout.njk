@@ -12,12 +12,12 @@
     <title>{{ title }}</title>
   </head>
   <body class="flex flex-col min-h-screen">
-    {% include 'header.njk' %}
+    {% include 'layouts/header.njk' %}
     <main class="container flex-grow py-8">
       {{ content | safe}}
     </main>
     {# <div class="container"> #}
-    {% include "footer.njk" %}
+    {% include "layouts/footer.njk" %}
     {# </div> #}
   </body>
 </html>
