@@ -1,5 +1,6 @@
 ---
 layout: layouts/home.njk
+title: Главная
 permalink: /
 eleventyNavigation:
   key: Home Page
