@@ -1,8 +1,10 @@
 ---
+layout: layouts/layout.njk
+permalink: /blog
 eleventyNavigation:
   key: Blog Page
   title: Блог
-  order: 2
+  order: 3
 ---
 
 ## Blog Page

@@ -1,13 +1,13 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const { DateTime } = require("luxon");
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const { DateTime } = require('luxon');
 
 module.exports = (config) => {
   config.addPlugin(syntaxHighlight);
   config.addPassthroughCopy({'src/assets': 'assets'});
   config.setFrontMatterParsingOptions({
     excerpt: true,
-    excerpt_separator: "<!-- excerpt -->"
+    excerpt_separator: '<!-- excerpt -->'
   });
   config.setTemplateFormats(['md', 'html', 'njk']);
   config.setBrowserSyncConfig({
@@ -16,8 +16,11 @@ module.exports = (config) => {
   });
   config.setDataDeepMerge(true);
   config.addPlugin(eleventyNavigationPlugin);
-  config.addFilter("formatDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+  config.addFilter('formatDate', dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('dd LLL yyyy');
+  })
+  config.addFilter('formatCode', codeObj => {
+    console.log(codeObj);
   })
 
   return {

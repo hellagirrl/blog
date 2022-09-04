@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: layouts/layout.njk
+permalink: '/home'
 pagination: 
   data: collections.post
   size: 6
@@ -9,8 +10,10 @@ pagination:
 ---
 
 <section class="text-gray-700 body-font">
-  <h1 class="text-5xl text-center">description</h1>
+
+  {# <h1 class="text-5xl text-center">{{ content | safe }}</h1> #}
   <div class="container px-8 pt-24 mx-auto lg:px-4">
+    <div class="px-8 ml-6 max-w-4xl">{{ content | formatCode | safe }}</div>
     <div class="flex flex-wrap text-left">
       {% for post in posts %}
         <div class="px-8 py-6 lg:w-1/3 md:w-full">
