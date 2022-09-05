@@ -557,9 +557,12 @@ video {
   margin-bottom: 1.2em;
 }
 .prose :where(a):not(:where([class~="not-prose"] *)) {
-  color: var(--tw-prose-links);
+  color: #3182ce;
   text-decoration: none;
   font-weight: 500;
+}
+.prose :where(a):not(:where([class~="not-prose"] *)):hover {
+  color: #2c5282;
 }
 .prose :where(strong):not(:where([class~="not-prose"] *)) {
   color: var(--tw-prose-bold);
