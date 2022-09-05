@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/main.bundle.css">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+
+    <script src="/assets/main.bundle.js" defer></script>
+
+    <title>{{ title }}</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    {% include 'layouts/header.njk' %}
+    <main class="md:container flex-grow py-8 prose">
+      {{ content | safe }}
+    </main>
+    {% include "layouts/footer.njk" %}
+  </body>
+</html>
+
+{# TODO: 
+- Dark Theme
+#}
