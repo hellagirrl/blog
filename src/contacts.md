@@ -1,5 +1,5 @@
 ---
-layout: layouts/layout.njk
+layout: layouts/additional.njk
 title: Контакты
 eleventyNavigation:
   key: Contacts Page
@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 4
 ---
 
-## Contacts Page
+Coming soon

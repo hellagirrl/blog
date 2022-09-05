@@ -13,12 +13,10 @@
   </head>
   <body class="flex flex-col min-h-screen">
     {% include 'layouts/header.njk' %}
-    <main class="md:container flex-grow py-8">
+    <main class="md:container flex-grow py-8 prose">
       {{ content | safe }}
     </main>
-    {# <div class="container"> #}
     {% include "layouts/footer.njk" %}
-    {# </div> #}
   </body>
 </html>
 

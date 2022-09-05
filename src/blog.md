@@ -1,5 +1,5 @@
 ---
-layout: layouts/layout.njk
+layout: layouts/additional.njk
 title: Блог
 eleventyNavigation:
   key: Blog Page
@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 3
 ---
 
-## Blog Page
+Coming soon

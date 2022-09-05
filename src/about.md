@@ -1,5 +1,5 @@
 ---
-layout: layouts/layout.njk
+layout: layouts/additional.njk
 title: Обо мне
 eleventyNavigation:
   key: About Page
@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 2
 ---
 
-## About Page
+Coming soon
