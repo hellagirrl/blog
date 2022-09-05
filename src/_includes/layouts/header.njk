@@ -3,7 +3,7 @@
     <nav class="flex items-center justify-center md:ml-auto md:mr-auto">
       {% set navPages = collections.all | eleventyNavigation %}
       {% for link in navPages %}
-        <a href="{{ link.url }}" class="mr-4 text-sm sm:mr-6 md:text-base font-semibold hover:text-gray-900">{{ link.title }}</a>
+        <a href="{{ link.url | url }}" class="mr-4 text-sm sm:mr-6 md:text-base font-semibold hover:text-gray-900">{{ link.title }}</a>
       {%- endfor %}
     </nav>
   </div>
