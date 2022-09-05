@@ -1303,10 +1303,6 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .font-semibold {
   font-weight: 600;
 }
@@ -1717,13 +1713,6 @@ video {
   }
 
   .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-@media (min-width: 1280px) {
-
-  .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
