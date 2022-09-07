@@ -1,10 +1,10 @@
 ---
-layout: layouts/additional.njk
+layout: layouts/contacts.njk
 title: Контакты
 eleventyNavigation:
   key: Contacts Page
   title: Контакты
-  order: 4
+  order: 3
 ---
 
-Coming soon
+Вы можете связаться со мной в [телеграме](https://t.me/katttywho) или написав на [почту](catherineitj28@gmail.com).
