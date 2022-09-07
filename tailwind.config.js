@@ -23,10 +23,10 @@ module.exports = {
             },
             a: {
               textDecoration: 'none',
-              color: '#3182ce',
+              color: '#1D4ED8',
               '&:hover': {
-                color: '#2c5282',
-              },
+                color: '#60A5FA',
+              }
             },
           },
         },
