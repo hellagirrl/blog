@@ -1,8 +1,8 @@
 {
-  "name": "articles",
+  "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
     "build:eleventy": "npx @11ty/eleventy --pathprefix=blog",
@@ -13,8 +13,8 @@
     "start:webpack": "webpack --watch"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Katerina I",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-navigation": "^0.3.5",
